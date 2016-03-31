@@ -1,0 +1,4 @@
+services:
+#    dp_platform_ui_extension_skeleton.example:
+#        class: DP\PlatformUIExtensionSkeletonBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
