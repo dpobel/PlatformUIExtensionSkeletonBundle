@@ -2,3 +2,17 @@ system:
     default:
         yui:
             modules:
+                dp-subitemrandomgifplugin:
+                    path: %extension_skeleton.public_dir%/js/views/plugins/dp-subitemrandomgifplugin.js
+                    requires: ['plugin', 'base', 'dp-subitemrandomgifview']
+                    dependencyOf: ['ez-subitemboxview']
+                dp-subitemrandomgifview:
+                    path: %extension_skeleton.public_dir%/js/views/dp-subitemrandomgifview.js
+                    requires: ['ez-subitembaseview', 'dpsubitemrandomgifview-ez-template', 'ez-asynchronousview']
+                dpsubitemrandomgifview-ez-template:
+                    type: 'template'
+                    path: %extension_skeleton.public_dir%/templates/randomgif.hbt
+                dp-subitemrandomgifviewserviceplugin:
+                    path: %extension_skeleton.public_dir%/js/views/services/plugins/dp-subitemrandomgifviewserviceplugin.js
+                    requires: ['ez-viewservicebaseplugin', 'io']
+                    dependencyOf: ['ez-locationviewviewservice']

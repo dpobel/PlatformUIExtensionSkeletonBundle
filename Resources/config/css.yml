@@ -2,3 +2,4 @@ system:
     default:
         css:
             files:
+                - %extension_skeleton.css_dir%/randomgif.css

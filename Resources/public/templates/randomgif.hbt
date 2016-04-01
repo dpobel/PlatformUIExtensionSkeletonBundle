@@ -1,0 +1,12 @@
+{{#if loadingError}}
+    <p class="ez-asynchronousview-error ez-font-icon">
+        An error occurred while loading the sub-items list..
+        <button class="ez-asynchronousview-retry ez-button ez-font-icon pure-button">Retry</button>
+    </p>
+{{else}}
+    {{#if gifInfo}}
+        <img src="{{ gifInfo.src }}" alt="Random GIF" width="{{ gifInfo.width }}" height="{{ gifInfo.height }}">
+    {{/if}}
+{{/if}}
+<p><button class="ez-button ez-font-icon dp-new-one" data-icon="&#xe60f;">Another one</button></p>
+<div class="ez-subitemrandomgif-loader-mask"></div>
