@@ -2,3 +2,4 @@ system:
     default:
         css:
             files:
+                - 'bundles/dpplatformuiextensionskeleton/css/myproject.css'
