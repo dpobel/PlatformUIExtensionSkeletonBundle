@@ -2,3 +2,6 @@ system:
     default:
         yui:
             modules:
+                navigationhubview-ez-template:
+                    type: 'template'
+                    path: "%extension_skeleton.public_dir%/templates/navigationhub.hbt"
