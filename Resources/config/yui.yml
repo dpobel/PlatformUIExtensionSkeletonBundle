@@ -5,3 +5,19 @@ system:
                 navigationhubview-ez-template:
                     type: 'template'
                     path: "%extension_skeleton.public_dir%/templates/navigationhub.hbt"
+
+                # custom dashboard block
+                dp-randomgifviewserviceplugin:
+                    path: "%extension_skeleton.public_dir%/js/views/services/plugins/dp-randomgifviewserviceplugin.js"
+                    requires: ['ez-viewservicebaseplugin']
+                    dependencyOf: ['ez-dashboardblocksviewservice']
+                dp-dashboardblockrandomgifplugin:
+                    path: "%extension_skeleton.public_dir%/js/views/plugins/dp-dashboardblockrandomgifplugin.js"
+                    requires: ['plugin', 'base', 'dp-dashboardblockrandomgifview']
+                    dependencyOf: ['ez-dashboardblocksview']
+                dp-dashboardblockrandomgifview:
+                    path: "%extension_skeleton.public_dir%/js/views/dashboard/dp-dashboardblockrandomgifview.js"
+                    requires: ['ez-dashboardblockasynchronousview', 'dpdashboardblockrandomgifview-ez-template', 'ez-asynchronousview']
+                dpdashboardblockrandomgifview-ez-template:
+                    type: 'template'
+                    path: "%extension_skeleton.public_dir%/templates/dashboard/randomgif.hbt"
