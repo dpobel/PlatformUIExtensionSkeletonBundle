@@ -1,3 +1,7 @@
 hello:
     path: '/hello'
     defaults: {_controller: dp_platform_ui_extension_skeleton.controller.hello:helloAction}
+
+platformuihello:
+    path: '/pjax/hello'
+    defaults: {_controller: dp_platform_ui_extension_skeleton.controller.plaformui.hello:helloAction}

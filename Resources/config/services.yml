@@ -5,3 +5,7 @@ services:
     dp_platform_ui_extension_skeleton.controller.hello:
         class: DP\PlatformUIExtensionSkeletonBundle\Controller\HelloController
         arguments: ['@templating']
+
+    dp_platform_ui_extension_skeleton.controller.plaformui.hello:
+        class: DP\PlatformUIExtensionSkeletonBundle\Controller\PlatformUIHelloController
+        parent: ezsystems.platformui.controller.base
