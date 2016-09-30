@@ -21,3 +21,9 @@ system:
                 dpdashboardblockrandomgifview-ez-template:
                     type: 'template'
                     path: "%extension_skeleton.public_dir%/templates/dashboard/randomgif.hbt"
+
+                # integrating a Symfony action
+                dp-hellorouteplugin:
+                    path: "%extension_skeleton.public_dir%/js/apps/plugins/dp-hellorouteplugin.js"
+                    requires: ['ez-pluginregistry', 'plugin', 'base']
+                    dependencyOf: ['ez-platformuiapp']
