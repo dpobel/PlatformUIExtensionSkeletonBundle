@@ -27,3 +27,7 @@ system:
                     path: "%extension_skeleton.public_dir%/js/apps/plugins/dp-hellorouteplugin.js"
                     requires: ['ez-pluginregistry', 'plugin', 'base']
                     dependencyOf: ['ez-platformuiapp']
+                dp-hellonavigationplugin:
+                    requires: ['ez-pluginregistry', 'ez-viewservicebaseplugin']
+                    path: "%extension_skeleton.public_dir%/js/views/services/dp-hellonavigationplugin.js"
+                    dependencyOf: ['ez-navigationhubviewservice', 'ez-navigationitemview']
