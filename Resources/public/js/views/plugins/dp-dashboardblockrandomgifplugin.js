@@ -6,7 +6,7 @@ YUI.add('dp-dashboardblockrandomgifplugin', function (Y) {
         initializer: function () {
             this.get('host').addBlock(
                 new Y.DP.DashboardBlockRandomGifView({
-                    priority: 100
+                    priority: 2000
                 })
             );
         },
