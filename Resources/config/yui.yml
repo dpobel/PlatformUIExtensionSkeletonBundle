@@ -36,4 +36,4 @@ system:
                 dp-signcounterplugin:
                     path: "%extension_skeleton.public_dir%/js/views/fields/plugins/dp-signcounterplugin.js"
                     requires: ['ez-pluginregistry', 'plugin', 'base']
-                    dependencyOf: ['ez-textblock-editview']
+                    dependencyOf: ['ez-textblock-editview', 'ez-richtext-editview']
