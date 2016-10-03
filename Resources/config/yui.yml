@@ -31,3 +31,9 @@ system:
                     requires: ['ez-pluginregistry', 'ez-viewservicebaseplugin']
                     path: "%extension_skeleton.public_dir%/js/views/services/dp-hellonavigationplugin.js"
                     dependencyOf: ['ez-navigationhubviewservice', 'ez-navigationitemview']
+
+                # field edit tweak
+                dp-signcounterplugin:
+                    path: "%extension_skeleton.public_dir%/js/views/fields/plugins/dp-signcounterplugin.js"
+                    requires: ['ez-pluginregistry', 'plugin', 'base']
+                    dependencyOf: ['ez-textblock-editview']
