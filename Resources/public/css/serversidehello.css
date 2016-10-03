@@ -1,0 +1,21 @@
+.ez-view-serversidehelloview {
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+}
+
+.ez-view-serversidehelloview img {
+    max-height: 400px;
+
+}
+
+.ez-view-serversidehelloview .dp-hello {
+    padding: 1em 1.5em;
+}
+
+.ez-view-serversidehelloview .dp-refresh {
+    font-size: 50%;
+    display: inline-block;
+    padding-left: 1em;
+}

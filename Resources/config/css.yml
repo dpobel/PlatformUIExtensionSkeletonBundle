@@ -4,3 +4,4 @@ system:
             files:
                 - 'bundles/dpplatformuiextensionskeleton/css/myproject.css'
                 - 'bundles/dpplatformuiextensionskeleton/css/randomgif.css'
+                - 'bundles/dpplatformuiextensionskeleton/css/serversidehello.css'

@@ -6,10 +6,14 @@ YUI.add('dp-hellorouteplugin', function (Y) {
         initializer: function () {
             var app = this.get('host');
 
+            app.views.serverSideHelloView = {
+                type: Y.DP.ServerSideHelloView,
+            };
+
             app.route({
                 name: "dpServerSide",
                 path: "/dp/:uri",
-                view: "serverSideView",
+                view: "serverSideHelloView",
                 service: Y.eZ.ServerSideViewService,
                 sideViews: {navigationHub: true, discoveryBar: false},
                 callbacks: ['open', 'checkUser', 'handleSideViews', 'handleMainView'],
