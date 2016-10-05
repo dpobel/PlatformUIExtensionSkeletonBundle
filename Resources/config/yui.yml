@@ -28,9 +28,9 @@ system:
                     requires: ['ez-pluginregistry', 'plugin', 'base', 'dp-serversidehelloview']
                     dependencyOf: ['ez-platformuiapp']
                 dp-hellonavigationplugin:
-                    requires: ['ez-pluginregistry', 'ez-viewservicebaseplugin']
+                    requires: ['ez-pluginregistry', 'ez-viewservicebaseplugin', 'ez-navigationitemview']
                     path: "%extension_skeleton.public_dir%/js/views/services/dp-hellonavigationplugin.js"
-                    dependencyOf: ['ez-navigationhubviewservice', 'ez-navigationitemview']
+                    dependencyOf: ['ez-navigationhubviewservice']
                 dp-serversidehelloview:
                     requires: ['ez-serversideview']
                     path: "%extension_skeleton.public_dir%/js/views/dp-serversidehelloview.js"
