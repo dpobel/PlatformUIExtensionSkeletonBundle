@@ -1,5 +1,7 @@
 YUI.add('dp-serversidehelloview', function (Y) {
 
+    Y.namespace('DP');
+
     Y.DP.ServerSideHelloView = Y.Base.create('serverSideHelloView', Y.eZ.ServerSideView, [], {
         events: {
             '.dp-refresh-button': {
